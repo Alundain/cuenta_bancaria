@@ -8,7 +8,7 @@ class CuentaBancaria:
     def hacer_deposito(self, monto):
         self.balance += monto
         return self
-
+    
     def hacer_retiro(self, monto):
         if monto > self.balance:
             self.balance -= 5
@@ -16,7 +16,7 @@ class CuentaBancaria:
         else: 
             self.balance -= monto
         return self
-
+    
     def mostrar_balance(self):
         print(f"El cliente cuenta con el siguiente balance : $ {self.balance}")
         return self
